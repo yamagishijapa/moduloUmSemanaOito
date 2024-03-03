@@ -12,7 +12,7 @@
 	<artifactId>education</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>moduloUmSemanaOito</name>
-	<description>moduloUmSemanaOito</description>
+	<description>Controler de professores e cursos.</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>

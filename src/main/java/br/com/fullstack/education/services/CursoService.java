@@ -8,9 +8,10 @@ import java.util.List;
 @Service
 public class CursoService {
 
-    public void cadastrarCurso(String nome, String descricao, int cargaHoraria) {
+    public Curso cadastrarCurso(String nome, String descricao, int cargaHoraria) {
         Curso curso = new Curso(nome, descricao, cargaHoraria);
         Curso.cadastrar(curso);
+        return curso;
     }
 
     public List<Curso> consultarCursos() {

@@ -5,14 +5,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AlunoRequest {
+public class CursoRequest {
 
     private String nome;
-    private LocalDate dataNascimento;
+    private String descricao;
+    private int cargaHoraria;
 }

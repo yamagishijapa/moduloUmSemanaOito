@@ -16,17 +16,19 @@ public class Curso {
     private static int proximoId = 1;
     @Getter
     private static List<Curso> cursosCadastrados = new ArrayList<>();
+    private List<Aluno> alunosMatriculados;
 
     @Setter(AccessLevel.NONE) private final int id;
     private String nome;
     private String descricao;
-    private int cargaHoraria;
+    private Integer cargaHoraria;
 
     public Curso(String nome, String descricao, int cargaHoraria) {
         this.id = proximoId++;
         this.nome = nome;
         this.descricao = descricao;
         this.cargaHoraria = cargaHoraria;
+        this.alunosMatriculados = new ArrayList<>();
     }
 
     public static void cadastrar(Curso curso) {
